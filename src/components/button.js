@@ -11,11 +11,7 @@ function useCopyText(text) {
       setIsCopied(false);
     }, 1500);
   };
-
-  return {
-    isCopied,
-    onClick,
-  };
+  return { isCopied, onClick };
 }
 
 export default function Button(props) {
@@ -24,8 +20,8 @@ export default function Button(props) {
 
   return (
     <div>
-      <button className='copyButton' onClick={copy.onClick}>
-        {copy.isCopied ? 'Copied!' : 'Copy'}
+      <button className='copy-button' onClick={copy.onClick}>
+        {copy.isCopied ? 'Copied' : 'Copy'}
       </button>
     </div>
   );
