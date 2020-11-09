@@ -20,7 +20,7 @@ export default function Button(props) {
 
   return (
     <div>
-      <button className='copy-button' onClick={copy.onClick}>
+      <button class='copy-button' onClick={copy.onClick}>
         {copy.isCopied ? 'Copied!' : 'Copy'}
       </button>
     </div>
